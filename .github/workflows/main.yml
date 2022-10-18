@@ -33,7 +33,7 @@ jobs:
   deploy-prd:
     runs-on: ubuntu-latest
     environment:
-      name: hmg
+      name: prd
     needs: deploy-hmg
     steps:
       - name: Run a on-line script

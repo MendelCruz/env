@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: hmg
-    needs: build
+    needs: deploy-dev
     steps:
       - name: Run a on-line script
         run: echo Hello HMG!!!
@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: hmg
-    needs: build
+    needs: deploy-hmg
     steps:
       - name: Run a on-line script
         run: echo Hello PRD!!!

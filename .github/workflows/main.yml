@@ -17,10 +17,8 @@ jobs:
     needs: build
     steps:
       - name: Run a on-line script
-        run: |
-          echo Hello DEV!!!
-          pwsh -command teste.ps1
-  
+        run: teste.ps1
+        shell: pwsh  
   
   deploy-hmg:
     runs-on: ubuntu-latest

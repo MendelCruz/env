@@ -17,7 +17,9 @@ jobs:
     needs: build
     steps:
       - name: Run a on-line script
-        run: echo Hello DEV!!!
+        run: |
+          echo Hello DEV!!!
+          pwsh -command ./teste.sh
   
   
   deploy-hmg:

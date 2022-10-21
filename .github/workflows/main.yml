@@ -19,7 +19,7 @@ jobs:
       - name: Run a on-line script
         run: |
           echo Hello DEV!!!
-          pwsh -command teste.sh
+          pwsh -command teste.ps1
   
   
   deploy-hmg:
